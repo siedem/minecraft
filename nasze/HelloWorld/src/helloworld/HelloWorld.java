@@ -41,7 +41,7 @@ public class HelloWorld extends Plugin implements CommandListener {//(3)
             permissions = { "" },
             toolTip = "/matrix")
   public void helloCommand(MessageReceiver caller, String[] parameters) {//(5)
-    String msg = "Czeœæ! Je¿eli to czytasz, to masz w³¹czony plugin HelloWorld by Maciek. Dziêkujemy za skorzystanie z naszych us³ug.";
+    String msg = "Czesc! Jezeli to czytasz, to masz wlaczony plugin HelloWorld by Maciek. Dziekujemy za skorzystanie z naszych uslug.";
     Canary.instance().getServer().broadcastMessage(msg);
   }
 }
