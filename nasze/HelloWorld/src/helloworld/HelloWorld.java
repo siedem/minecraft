@@ -36,12 +36,12 @@ public class HelloWorld extends Plugin implements CommandListener {//(3)
   public void disable() {
   }
 
-  @Command(aliases = { "matrix" },//(4)
+  @Command(aliases = { "matrix/" },//(4)
             description = "Displays the hello world message.",
             permissions = { "" },
-            toolTip = "/matrix")
+            toolTip = "/prawda/")
   public void helloCommand(MessageReceiver caller, String[] parameters) {//(5)
-    String msg = "Czesc! Jezeli to czytasz, to masz wlaczony plugin HelloWorld by Maciek. Dziekujemy za skorzystanie z naszych uslug.";
+    String msg = "Czy wiedziales, ze swiat w ktorym teraz jestes nie jest prawdziwy? W prawdziwym swiecie jest wielki komputer w ktorym jest ten caly swiat. Stworzenia mieszkajace w tamtym swiecie modom zrobic doslownie wszystko. Czy widziales kiedys noc nagle zmieniajacom sie na dzien? To zrobili Oni. Wiec strzez sie Ich, bo moze teraz cie sledzom. UWAZAJ!!!!! ";
     Canary.instance().getServer().broadcastMessage(msg);
   }
 }
