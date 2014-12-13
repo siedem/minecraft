@@ -92,7 +92,7 @@ public class BuildAHouse extends Plugin implements CommandListener {
     }
     
     // Set the whole area to wood
-    makeCube(0,0,0,width, height, BlockType.OakWood);
+    makeCube(0,0,0,width, height, BlockType.Glass);
     // Set the inside of the cube to air
     makeCube(1,1,1,width-2, height-2, BlockType.Air);
     
@@ -123,6 +123,7 @@ public class BuildAHouse extends Plugin implements CommandListener {
             description = "Build a simple house for shelter",
             permissions = { "" },
             toolTip = "/buildahouse")
+  @SuppressWarnings("unused")
   public void buildAHouseCommand(MessageReceiver caller, String[] parameters) {
     if (caller instanceof Player) { 
       Player me = (Player)caller;
