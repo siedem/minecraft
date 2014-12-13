@@ -91,10 +91,10 @@ public class BuildAHouse extends Plugin implements CommandListener {
       firstHouse = false;
     }
     
-    // Set the whole area to wood
+    // Set the whole area to glass
     makeCube(0,0,0,width, height, BlockType.Glass);
     // Set the inside of the cube to air
-    makeCube(1,1,1,width-2, height-2, BlockType.Air);
+    makeCube(1,1,1,width-2, height-2, BlockType.Water);
     
     // Pop a door in one wall
     Location door = new Location(origin.getWorld(), 
